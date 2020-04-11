@@ -201,7 +201,7 @@ footer p {
     justify-content: center;
     position: fixed;
     right: -100%;
-    transition: 1s ease-in-out;
+    transition: .5s ease-in-out;
     top: 80px;
     width: 100%;
   }
