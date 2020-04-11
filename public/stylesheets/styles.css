@@ -13,10 +13,14 @@ body {
 
 header {
   align-items: center;
+  background-color: #fff;
   display: flex;
   height: 110px;
   justify-content: space-between;
   padding: 0 45px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 header h1.header-title {
@@ -26,6 +30,10 @@ header h1.header-title {
 
 header nav {
   display: flex;
+}
+
+header nav button {
+  display: none;
 }
 
 header nav i.fa-search {
@@ -53,7 +61,9 @@ header nav ul.nav-links a {
 
 /* MAIN */
 
-    /* MAIN - BANNER */
+main {
+  margin-top: 110px;
+}
 
 main .banner {
   align-items: center;
@@ -169,7 +179,7 @@ footer p {
 
 @media (max-width: 918px) {
   section.feed {
-    height: 2370px;
+    height: 2410px;
   }
 
   .card {
@@ -178,6 +188,60 @@ footer p {
 }
 
 @media (max-width: 650px) {
+
+  /* HEADER */
+
+  header {
+    height: 80px;
+  }
+
+  .nav-links {
+    background: white;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    right: -100%;
+    transition: 1s ease-in-out;
+    top: 80px;
+    width: 100%;
+  }
+
+  .menu-active {
+    right: 0;
+  }
+
+  header nav ul.nav-links > a {
+    align-items: center;
+    display: flex;
+  }
+
+
+  header nav ul.nav-links li {
+    padding: 15px;
+  }
+  
+  header nav ul.nav-links li a {
+    font-size: 17px;
+  }
+
+  header nav button {
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+  }
+
+  main {
+    margin-top: 80px;
+  }
+
+  main section.banner .heading-wrapper {
+    padding: 20px 30px;
+  }
+
+  main section.banner h2 {
+    font-size: 25px;
+  }
+  
   section.feed {
     height: auto;
     flex-wrap: nowrap;
@@ -185,5 +249,15 @@ footer p {
 
   .card {
     width: 100%
+  }
+}
+
+@media (max-width: 440px) {
+  header nav ul.nav-links li {
+    padding: 15px 10px;
+  }
+
+  header nav ul.nav-links li a {
+    font-size: 14px;
   }
 }
