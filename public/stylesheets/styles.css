@@ -200,14 +200,17 @@ footer p {
     display: flex;
     justify-content: center;
     position: fixed;
-    right: -100%;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    right: 0;
     transition: .5s ease-in-out;
     top: 80px;
     width: 100%;
   }
 
   .menu-active {
-    right: 0;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
   }
 
   header nav ul.nav-links > a {
