@@ -1,0 +1,153 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* HEADER */
+
+header {
+  align-items: center;
+  display: flex;
+  height: 110px;
+  justify-content: space-between;
+  padding: 0 45px;
+}
+
+header h1.header-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav i.fa-search {
+  color: #c6c6c6;
+  padding: 0 12px;
+}
+
+header nav ul.nav-links {
+  display: flex;
+}
+
+header nav ul.nav-links li {
+  padding: 0 15px;
+}
+
+header nav ul.nav-links a {
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* MAIN */
+
+    /* MAIN - BANNER */
+
+main .banner {
+  align-items: center;
+  background: url("../images/slide-1.jpg");
+  display: flex;
+  height: 510px;
+  justify-content: center;
+}
+
+main .banner .heading-wrapper {
+  background-color: #fff;
+  padding: 36px 65px;
+}
+
+main .banner h2 {
+  font-size: 46px;
+  font-weight: 600;
+}
+
+/* FEED */
+
+section.feed {
+  /* align-items: flex-start; */
+  align-content: space-around;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: flex-start;
+  padding: 80px 40px 40px;
+  flex-flow: column wrap;
+  height: 1715px;
+  /* height: 1520px; */
+}
+
+.card {
+  background-color: #fff;
+  margin-bottom: 70px;
+  width: 26%;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card .card-body {
+  padding: 40px 40px 20px;
+  text-align: center;
+}
+
+.card .card-body h2 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.card .card-body .sub-title {
+  color: #c7c7c7;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  transition: .5s color;
+}
+
+.card .card-body .sub-title a {
+  color: #c7c7c7;
+  transition: .5s color;
+}
+
+.card .card-body .sub-title a:hover {
+  color: #000;
+  transition: .5s color;
+}
+
+.card .card-body .card-description {
+  color: #7E7E7E;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+.card .card-body .card-footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card .card-body .card-footer a {
+  font-size: 12px;
+  color: #c7c7c7;
+  text-transform: uppercase;
+  transition: .5s color;
+  font-weight: 600;
+}
+
+.card .card-body .card-footer a:hover {
+  color: #000;
+  transition: .5s color;
+}
