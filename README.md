@@ -30,4 +30,4 @@ This project was developed with the following technologies:
 Stockholm was a blog that was introduced during my React course at @codenation.
 
 
-Feito com ♥ by Murilo
+Made with ♥ by Murilo
